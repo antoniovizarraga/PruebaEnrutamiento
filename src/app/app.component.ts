@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterLinkActive, RouterOutlet, RouterLink } from '@angular/router';
+import { RouterLinkActive, RouterOutlet, RouterLink, Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -8,5 +8,9 @@ import { RouterLinkActive, RouterOutlet, RouterLink } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
+
+  constructor (private router: Router) {}
+  
   title = 'pruebaEnrutamiento';
 }
+
